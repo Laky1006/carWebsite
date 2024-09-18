@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f1d4ec;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+}
+
+.img-section {
+    width: 100px;
+    height: auto;
+}
+
+#img-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
