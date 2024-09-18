@@ -7,7 +7,7 @@
 body {
     font-family: sans-serif;
     background-color: #f1d4ec;
-    color: #333;
+    color: #740758;
     line-height: 1.6;
     padding: 20px;
     height: 100%;
@@ -20,7 +20,7 @@ body {
     height: auto;
 }
 
-#img-flex {
+#img-flex-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,4 +30,20 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.flex-img {
+    height: 400px;
+    width: auto;
+}
+
+.kartite {
+    height: 500px;
+    width: 500px;
+    background-color: #eb9ac9;
+    box-shadow: 0px 5px 10px #7e5f8a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
