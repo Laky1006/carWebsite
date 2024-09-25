@@ -15,6 +15,18 @@ body {
     padding: 30px;
 }
 
+
+nav {
+    width: 100%;
+    background-color: aqua;
+}
+
+
+
+
+
+
+
 .img-section {
     width: 100px;
     height: auto;
@@ -33,7 +45,7 @@ body {
 }
 
 .flex-img {
-    height: 400px;
+    height: 350px;
     width: auto;
 }
 
@@ -46,4 +58,31 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+@keyframes example {
+    form {transform: rotate(0deg) scaleX(-1);}
+    to {transform: rotate(360deg) scaleX(1);}
+    
+}
+
+.kartite:hover {
+    animation-name: example;
+    animation-duration: 0.5s;
+}
+
+.button-kartites {
+    background-color: #eb1a94;
+    border-radius: 7px;
+    border-color: #740758;
+    padding: 4px;
+    margin: 10px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.button-kartites:hover {
+    background-color: #850851;
+    padding: 6px;
+    margin: 8px;
 }
