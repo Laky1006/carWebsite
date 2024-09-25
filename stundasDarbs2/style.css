@@ -5,27 +5,51 @@
 }
 
 body {
-    font-family: sans-serif;
     background-color: #f1d4ec;
+    font-family: sans-serif;
     color: #740758;
+}
+
+header {
+    background-color: #ec48a8;
+    padding: 10px 10px 10px 10px;
+}
+
+main {
     line-height: 1.6;
-    padding: 20px;
     height: 100%;
     width: 100%;
-    padding: 30px;
+    padding: 10px 30px 30px 30px;
 }
 
 
 nav {
     width: 100%;
-    background-color: aqua;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
+nav div {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+nav a {
+    color: #f3d9e8;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    font-weight: bolder;
+    text-decoration: none;
+}
 
-
-
-
+section {
+    margin-top: 30px;
+}
 
 .img-section {
     width: 100px;
@@ -79,6 +103,7 @@ nav {
     margin: 10px;
     color: aliceblue;
     font-weight: bold;
+    
 }
 
 .button-kartites:hover {
