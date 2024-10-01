@@ -5,18 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header>
         
         <nav>
             <p>･ ｡ﾟ☆: *.☽ .* :☆ﾟ.</p>
-            <div>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contacts.html">Contacts</a>
+            <div id = "nav-div">
+                <a href="index.html" class="nav-option">Home</a>
+                <a href="about.html" class = "nav-option">About</a>
+                <!-- <a href="contacts.html" class = "nav-option">Contacts</a> -->
+                <div class="dropdown">
+                    <!-- <a class="dropbtn nav-option">Dropdown<i class="fa fa-caret-down"></i></a> -->
+                    <a href="contacts.html" class="dropbtn nav-option">Contacts</a>
+                    <div class="dropdown-content">
+                      <a href="#">These</a>
+                      <a href="#">Dont Work</a>
+                      <a href="#">Yet</a>
+                    </div>
+
+                </div>
             </div>
-            <p>･ ｡ﾟ☆: *.☾ .* :☆ﾟ.</p>
+            <p> ｡ﾟ☆: *.☾ .* :☆ﾟ.</p>
         </nav>
     </header>
 
@@ -31,14 +42,14 @@
                     <img src="https://static.wikia.nocookie.net/silly-cat/images/3/33/Noopy.png/revision/latest/thumbnail/width/360/height/360?cb=20231201205915" class = "kartite-img">
                     <h2>Sleepy meow meow</h2>
                     <p>No amount of sleep will fix him but a little treat might</p>
-                    <button class="button-kartites">Give him a treat</button>
+                    <button class="button-kartites" id="eepy-cat-btn">Give him a treat</button>
                 </div>
 
                 <div class = "kartite">
                     <img src="https://i1.sndcdn.com/artworks-zyYqA8D0BdfuyH28-WeeHrw-t500x500.jpg" class = "kartite-img">
                     <h2>Orange</h2>
                     <p>He isnt orange but has a soul of an orange cat</p>
-                    <button class="button-kartites">Make him orange</button>
+                    <button class="button-kartites" id="orange-btn">Make him orange</button>
                 </div>
 
                 <div class = "kartite">
@@ -46,7 +57,7 @@
                     <h2>The Magic Kitty</h2>
                     <p>He can do things incomprehensible by human mind</p>
                     
-                    <button class="button-kartites">Wana see a magic trick?</button>
+                    <button class="button-kartites" id="wizard-btn">Wana see a magic trick?</button>
                 </div>
 
                 <div class = "kartite">
@@ -98,7 +109,28 @@
                     <button class="button-kartites">Wana see a magic trick?</button>
                 </div>
                 
-            </div>     
+            </div>
+
+            <div id="Eppy-Cat-Mod" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                </div>
+            </div>
+
+            <!-- <div id="Orange-Mod" class="modal"></div>
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal.. orange</p>
+                </div>
+            </div>
+
+            <div id="Wizard-Mod" class="modal"></div>
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal.. wizard</p>
+                </div>
+            </div> -->
 
         </section>
 
