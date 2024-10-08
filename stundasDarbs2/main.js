@@ -16,39 +16,30 @@ btn.onclick = function() {
   modal.style.display = "block";
 }
 
+btnOrange.onclick = function() {
+  modalOrange.style.display = "block";
+}
+
+btnWizard.onclick = function() {
+  modalWizard.style.display = "block";
+}
+
 function close_btn() {
     modal.style.display = "none";
     modalOrange.style.display = "none";
     modalWizard.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+function darkModeFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
 }
 
-// When the user clicks on the button, open the modal
-btnOrange.onclick = function() {
-    modalOrange.style.display = "block";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalOrange) {
-    modalOrange.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, open the modal
-btnWizard.onclick = function() {
-    modalWizard.style.display = "block";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalWizard) {
-    modalWizard.style.display = "none";
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
 }

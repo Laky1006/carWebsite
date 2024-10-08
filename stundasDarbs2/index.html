@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="main.js" defer></script>
 </head>
 <body>
     <header>
-        
-        <nav>
+        <nav id = "nav-desktop">
             <p>･ ｡ﾟ☆: *.☽ .* :☆ﾟ.</p>
             <div id = "nav-div">
                 <a href="index.html" class="nav-option">Home</a>
@@ -21,19 +21,31 @@
                     <a href="contacts.html" class="dropbtn nav-option">Contacts</a>
                     <div class="dropdown-content">
                       <a href="#">These</a>
-                      <a href="#">Dont Work</a>
-                      <a href="#">Yet</a>
+                      <a href="#">Do Nothing</a>
+                      <a href="#">For now</a>
                     </div>
 
                 </div>
             </div>
             <p> ｡ﾟ☆: *.☾ .* :☆ﾟ.</p>
         </nav>
+
+        <nav class="nav-mobile">
+            <a class="active">More info</a>
+            <div id="myLinks">
+                <a href="index.html" class="nav-option-mobile">Home</a>
+                <a href="about.html" class = "nav-option-mobile">About</a>
+                <a href="contacts.html" class="nav-option-mobile">Contacts</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <span id = "menu-icon">&Xi;</span>
+            </a>
+        </nav>
     </header>
 
     <main>
  
-        <h1>Car galery</h1>
+        <h1>Car galery</h1> <button onclick="darkModeFunction()" id="darkModebtn">Colors</button>
 
         <section>
             <div id="kartites-section">
