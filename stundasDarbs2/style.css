@@ -4,13 +4,19 @@
     box-sizing: border-box;
 }
 
+/* ----------- DARK MODE ----------- */
 .dark-mode {
-    background-color: #2c1d30;
+    background-color: #231942;
     color: #f5d2fd;
+    font-family: "Almendra SC", serif;
   
     .nav-option {
       color: #edbbf8;
       text-shadow: 0px 1px 5px #2d0c53;
+    }
+
+    .nav-option {
+        font-family: "Almendra SC", serif;
     }
 
     .nav-option:hover {
@@ -18,7 +24,7 @@
     }
 
     header {
-        background-image: linear-gradient(#592781, #9c4ac2, #592781);
+        background-image: linear-gradient(#451d5f, #843797, #451d5f);
         padding: 10px 10px 10px 10px;
     }
     
@@ -107,6 +113,12 @@
         background-color: #410c64;
         color: #fdedfb;
     }
+
+    button {
+        font-family: "Almendra SC", serif;
+        font-weight: 100;
+        letter-spacing: 1px;
+    }
 }
 
 #darkModebtn {
@@ -122,6 +134,7 @@
     background-color: #850851;
 }
 
+/* ----------- MAIN ----------- */
 body {
     background-color: #f1d4ec;
     font-family: sans-serif;
@@ -140,6 +153,7 @@ main {
     padding: 10px 30px 30px 30px;
 }
 
+/* ----------- NAVIGATION BAR DESKTOP ----------- */
 #nav-desktop {
     width: 100%;
     height: 100px;
@@ -179,150 +193,7 @@ main {
     text-shadow: 0px 4px 7px #a31780;
 }
 
-.dropdown {
-    margin: 0;
-}
-
-.dropbtn {   
-    margin: 0;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 70px;
-    background-color: #fad5f2;
-    width: 200px;
-    box-shadow: 0px 8px 16px #b481a8;
-    z-index: 1;
-}
-  
-.dropdown-content a {
-    float: none;
-    color: #740758;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #fcbcee;
-}
-  
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-section {
-    margin-top: 30px;
-}
-
-.img-section {
-    width: 100px;
-    height: auto;
-}
-
-#kartites-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    row-gap: 30px;
-    flex-wrap: wrap;
-}
-
-.section-div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.kartite-img {
-    height: 350px;
-    width: auto;
-}
-
-.kartite {
-    height: 500px;
-    width: 500px;
-    padding: 5px;
-    margin: 5px;
-    background-color: #eb9ac9;
-    box-shadow: 0px 5px 10px #7e5f8a;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-@keyframes example {
-    form {transform: rotate(0deg) scaleX(-1);}
-    to {transform: rotate(360deg) scaleX(1);}
-    
-}
-
-.kartite:hover {
-    animation-name: example;
-    animation-duration: 0.5s;
-}
-
-.button-kartites {
-    background-color: #eb1a94;
-    border-radius: 7px;
-    border-color: #740758;
-    padding: 4px;
-    margin: 10px;
-    color: aliceblue;
-    font-weight: bold;
-    
-}
-
-.button-kartites:hover {
-    background-color: #850851;
-    padding: 6px;
-    margin: 8px;
-}
-
-
-/* The Modal (background) */
-.modal {
-    display: none;
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.4); 
-}
-  
-  /* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-  
-  /* The Close Button */
-.close {
-    color: #696969;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-  
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
+/* ----------- NAVIGATION BAR MOBILE ----------- */
 .nav-mobile {
     display: none;
     overflow: hidden;
@@ -371,6 +242,160 @@ section {
     color: #fdedfb;
 }
 
+/* ----------- DROPDOWN ----------- */
+.dropdown {
+    margin: 0;
+}
+
+.dropbtn {   
+    margin: 0;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 70px;
+    background-color: #fad5f2;
+    width: 200px;
+    box-shadow: 0px 8px 16px #b481a8;
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: #740758;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #fcbcee;
+}
+  
+/* Shows the dropdown menu when hovered */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*  ----------- ALL SECTIONS ----------- */
+section {
+    margin-top: 30px;
+}
+
+.img-section {
+    width: 100px;
+    height: auto;
+}
+
+#kartites-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.section-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ /* ----------- KARTITES ----------- */
+
+.kartite {
+    height: 500px;
+    width: 500px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #eb9ac9;
+    box-shadow: 0px 5px 10px #7e5f8a;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Animation for kartites */
+@keyframes example {
+    form {transform: rotate(0deg) scaleX(-1);}
+    to {transform: rotate(360deg) scaleX(1);}
+    
+}
+
+.kartite:hover {
+    animation-name: example; /* Turns on animation when hovered */
+    animation-duration: 0.5s;
+}
+
+/* Content of kartites */
+.kartite-img {
+    height: 350px;
+    width: auto;
+}
+
+.button-kartites {
+    background-color: #eb1a94;
+    border-radius: 7px;
+    border-color: #740758;
+    padding: 4px;
+    margin: 10px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.button-kartites:hover {
+    background-color: #850851;
+    padding: 6px;
+    margin: 8px;
+}
+
+
+/* ----------- MODAL ----------- */
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+  
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    width: 80%; 
+}
+  
+/* Close button */
+.close {
+    color: #696969;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-img-orange {
+    filter: hue-rotate(100deg);
+}
+
+/* ----------- MEDIA ----------- */
 @media (max-width: 1600px) and (min-width: 1300px) {
     .kartite {
         height: 400px;

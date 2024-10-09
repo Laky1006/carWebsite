@@ -6,7 +6,9 @@
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet">    <script src="main.js" defer></script>
 </head>
 <body>
     <header>
@@ -37,7 +39,7 @@
                 <a href="about.html" class = "nav-option-mobile">About</a>
                 <a href="contacts.html" class="nav-option-mobile">Contacts</a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="burgerNav()">
                 <span id = "menu-icon">&Xi;</span>
             </a>
         </nav>
@@ -45,7 +47,7 @@
 
     <main>
  
-        <h1>Car galery</h1> <button onclick="darkModeFunction()" id="darkModebtn">Colors</button>
+        <h1>Car galery</h1> <button onclick="darkModeFunction()" id="darkModebtn">Halloween</button>
 
         <section>
             <div id="kartites-section">
@@ -126,21 +128,22 @@
             <div id="eppy-cat-mod" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="close_btn()">&times;</span>
-                    <p>Some text in the Modal..</p>
+                    <p>You gave him a treat!</p>
                 </div>
             </div>
 
             <div id="Orange-Mod" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="close_btn()">&times;</span>
-                    <p>Some text in the Modal.. orange</p>
+                    <img src="https://i1.sndcdn.com/artworks-zyYqA8D0BdfuyH28-WeeHrw-t500x500.jpg" id = "modal-img-orange">
+                    <p>You made him green!</p>
                 </div>
             </div>
 
             <div id="Wizard-Mod" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="close_btn()">&times;</span>
-                    <p>Some text in the Modal.. wizard</p>
+                    <p>BOO!</p>
                 </div>
             </div>
 

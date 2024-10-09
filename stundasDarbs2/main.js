@@ -33,9 +33,16 @@ function close_btn() {
 function darkModeFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
+
+  const btn = document.getElementById("darkModebtn");
+  if (btn.innerText === 'Halloween') {
+      btn.innerText = 'Barbie';
+  } else {
+      btn.innerText = 'Halloween';
+  }
 }
 
-function myFunction() {
+function burgerNav() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
     x.style.display = "none";
